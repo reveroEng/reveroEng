@@ -1,0 +1,52 @@
+.main-footer {
+    display: flex;
+    background-color: $reveroGreen;
+    color: $reveroOrange; 
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+.main-footer > img {
+    color: $reveroGray;
+}
+
+.row-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.6rem;
+    color: $reveroGray
+}
+
+.row-footer > svg {
+    margin-right: 0.3rem;
+}
+
+.footer-footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $reveroGreen;
+    color: $reveroGray;
+    padding: 1rem;
+    border-top: 1px solid $mediumGreen;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px)  {
+
+    #footer-servicos {
+        display: none;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        padding: 0.2rem;
+        padding-left: 2rem;
+    }
+
+    #logo-footer {
+        position: absolute;
+        right: 0;
+    }
+}

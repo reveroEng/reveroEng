@@ -1,0 +1,43 @@
+html {
+    font-size: 100%;
+    font-family: "Nexa";
+    font-weight: normal;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $darkerGreen;
+    font-size: 1.2rem;
+}
+
+h1 {
+    color: $reveroOrange;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:not(#logo, #go-to-contact, #send-email):hover {
+    border-bottom: 3px solid $reveroGreen;    
+    text-align: center;
+    transition-duration: 0.1s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}

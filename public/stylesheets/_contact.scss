@@ -1,0 +1,84 @@
+#contato {
+    display: flex;
+    margin: 3rem;
+    padding: 3rem;
+    padding-right: 0;
+    background-color: $darkerGreen;
+    border-left: 10px solid #f2813c;
+    min-height: 100vh;
+}
+
+.fixed-ways {
+    color: $reveroGray;
+    font-size: 1.2rem;
+}
+
+.send-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $reveroGreen;
+    border-radius: 2rem;
+    padding: 3rem;
+    width: 80%;
+    color: $reveroGray;
+    font-weight: bolder;
+}
+
+.send-email > a {
+    padding: 1rem;
+    border: 1px solid $reveroGray;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: $reveroGray;
+    font-weight: bold;
+}
+
+.send-email > a:hover {
+    color: $reveroOrange;
+    background-color: $darkerGreen;
+    border: 1px solid $reveroOrange;
+}
+
+.send-email > input {
+    height: 2rem;
+}
+
+.send-email > input, textarea {
+    margin-bottom: 0.8rem;
+}
+
+.alert-inputs {
+    color: $reveroOrange;
+    font-size: medium;    
+    margin: 0;    
+        margin-bottom: 0px; 
+    padding: 0;   
+    margin-bottom: 0.7rem;    
+}
+
+.row-contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.row-contact > svg {
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 767px)  {
+    #contato {
+        flex-direction: column;
+        margin-left: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .send-email {
+        width: 80vw;
+    }
+}
+

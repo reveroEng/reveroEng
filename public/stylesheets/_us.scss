@@ -1,0 +1,137 @@
+#sobre-nos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.div-bib {
+    background-color: $darkerGreen;
+    right: 0;
+    height: 100vh;
+    padding-left: 0.5rem;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.profile > .bio {
+    background-color: $reveroGray;
+    border-radius: 1rem;
+    color: $darkerGreen;
+    padding: 1rem 3rem 1rem 3rem;
+    width: 25rem;
+    margin: 2rem;
+    margin-bottom: 0;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.profile > .photo {
+    width: 6rem;
+    margin-top: 1.5rem;
+}
+
+.profile > .photo > img {
+    width: 10rem;
+    border-radius: 5rem;
+    position: absolute
+}
+
+.div-general {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $reveroGreen;
+    width: 100%;
+    border-top: 5px solid #f2813c;
+    height: 100vh;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.highlight {
+    border-bottom: 1px solid $reveroOrange;
+}
+
+.nome-colaborador {
+    font-weight: bolder;
+}
+
+.funcao-colaborador { 
+    font-style: italic;
+}
+
+.text-revero-bio {
+    color: $reveroGray;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.div-general > div > a {
+    padding: 1rem;
+    margin-top: 0.9rem;
+    border: 1px solid $reveroGray;
+    border-radius: 0.5rem;
+    color: $reveroGray;
+    font-weight: bolder;
+}
+
+.div-general > div > a:hover {
+    color: $reveroOrange;
+    background-color: $darkerGreen;
+    border: 1px solid $reveroOrange;
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 1250px)  {
+    #sobre-nos{
+        flex-direction: column;
+    }
+
+    .div-general > h1 {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .div-general {
+        padding: 1rem;
+        padding-left: 1rem;
+        height: fit-content;
+        text-align: justify;
+    }
+
+    .div-general > div > a {
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile > .photo {
+        width: 100%;
+    }
+
+    .profile > .photo > img {
+        position: relative;
+        top: 10%;
+        float: inline-end;
+        margin-right: 1rem;
+    }
+
+    .div-bib {
+        height: auto;
+    }
+
+    .profile > .bio {
+        margin-top: -1rem;
+        width: 80%
+    }
+
+    .profile {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}
