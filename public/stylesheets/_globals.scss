@@ -27,7 +27,7 @@ a {
     cursor: pointer;
 }
 
-a:not(#logo, #go-to-contact, #send-email):hover {
+a:not(#logo, #go-to-contact, #send-email, .client-logo):hover {
     border-bottom: 3px solid $reveroGreen;    
     text-align: center;
     transition-duration: 0.1s;
