@@ -1,0 +1,17 @@
+.blog {
+    margin: 4rem
+}
+
+.blog-card {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: $reveroGray;
+    background-color: $reveroGreen;
+    box-shadow: 3px 2px 1px 1px $reveroOrange;
+    border-radius: 2px;
+}
+
+.text-highlight {
+    color: $reveroOrange;
+    font-weight: bold;
+}
